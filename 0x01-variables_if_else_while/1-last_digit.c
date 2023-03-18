@@ -1,6 +1,7 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
+
 
 /**
  * main - Determine if the last digit of a random number is
