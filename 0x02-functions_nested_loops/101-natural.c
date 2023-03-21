@@ -7,11 +7,14 @@
 
 int main(void)
 {
-	int i, res;
+	int sum, num;
 
-	for (i = 0; i < 1024; i++)
-		if (i % 3 == 0 || i % 5 == 0)
-			res += i;
-		printf("%d\n", res);
-		return (0);
+	for (num = 0; num < 1024; ++num)
+	{
+		if ((num % 3 == 0) || (num % 5 == 0))
+			sum += num;
+	}
+	printf("%d\n", sum);
+
+	return (0);
 }
