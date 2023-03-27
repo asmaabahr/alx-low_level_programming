@@ -4,25 +4,23 @@
 
 /**
  * main - generates random valid passwords
- * return: 0 (on success).
- *
+ * return: zero
 */
 
 int main(void)
 {
-	int pass, sum;
+	int sum;
+	char c;
 
 	srand(time(NULL));
-
-	sum = 0;
 	while (sum <= 2645)
 	{
-		pass = (rand()  %  128);
+		c = (rand()  %  128);
 
-		sum += pass;
-		printf("%c", pass);
+		sum += c;
+		putchar(c);
 	}
-	printf("%c", 2772 - sum);
+	putchar( 2772 - sum);
 
 	return (0);
 }
